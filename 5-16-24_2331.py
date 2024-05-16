@@ -29,14 +29,13 @@ Submitted on 5-16-23, O(n)
 class Solution:
     def evaluateTree(self, root: Optional[TreeNode]) -> bool:
         def recurse(root):
-            if root.val == 1:
-                return True
             if root.val == 0:
                 return False
-            else:
-                if root.val == 2:
-                    return recurse(root.left) or recurse(root.right)
-                if root.val == 3:
-                    return recurse(root.left) and recurse(root.right)
+            if root.val == 1:
+                return True
+            if root.val == 2:
+                return recurse(root.left) or recurse(root.right)
+            if root.val == 3:
+                return recurse(root.left) and recurse(root.right)
 
         return recurse(root)
