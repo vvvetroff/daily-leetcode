@@ -8,10 +8,12 @@ fraction arr[i] / arr[j].
 
 Return the kth smallest fraction considered. Return your answer as an array of integeres of size 2, where answer[0] == arr[i] and answer[1] == arr[j]
 
-Submitted on 5-13-24, 2200ms runtime (ew)
-
 Generate fraction and insert the fraction and the values to make that fraction into a heap
 Extract the kth item and return it.
+Heaps makes sense for this problem conceptually but it sucks
+for runtime. I believe there is a binary search way of doing this
+2200ms runtime (ew)
+O(n^2log(n))?
 '''
 
 class Solution:
