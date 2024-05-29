@@ -1,5 +1,5 @@
 '''
-58. Lenght of Last Word
+58. Length of Last Word
 
 Difficulty: Easy
 Topics: String
