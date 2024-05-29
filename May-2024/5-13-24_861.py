@@ -1,6 +1,9 @@
 '''
 861. Score After Flipping Matrix
 
+Difficulty: Medium
+Topics: Array, Greedy, Bit Manipulation, Matrix
+
 You are given an m x n binary matrix grid.
 
 A move consists of choosing any row or column and toggling each
