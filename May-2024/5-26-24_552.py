@@ -1,6 +1,9 @@
 '''
 552. Student Attendance Record II
 
+Difficulty: Hard
+Topics: Dynamic Programming
+
 An attendance record for a student can be represented as a string where 
 each character signifies whether the student was absent, late, or present on that day. 
 The record only contains the following three characters:
@@ -56,3 +59,6 @@ class Solution:
             return dp[n][total_lates][total_abs]
 
         return recurse(n, 0, 0)
+
+
+
