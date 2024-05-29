@@ -1,13 +1,20 @@
 '''
 2597. The Number of Beautiful Subsets
 
+Difficulty: Medium
+Topics: Array, Dynamic Programming
+        Backtracking, Sorting
+
 You are given an array nums of positive integers and a positive integer k.
 
-A subset of nums is beautiful if it does not contain two integers with an absolute difference equal to k.
+A subset of nums is beautiful 
+if it does not contain two integers with an absolute difference equal to k.
 
 Return the number of non-empty beautiful subsets of the array nums.
 
-A subset of nums is an array that can be obtained by deleting some (possibly none) elements from nums. Two subsets are different if and only if the chosen indices to delete are different.
+A subset of nums is an array that can be obtained 
+by deleting some (possibly none) elements from nums. 
+Two subsets are different if and only if the chosen indices to delete are different.
 
 I don't like subset problems. So far, I have not understood them (coding-wise)
 Sub-optimal answer from Neetcode, i'll code up an optimal solution
