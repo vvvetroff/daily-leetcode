@@ -1,6 +1,9 @@
 '''
 2331. Evaulate Boolean Binary Tree
 
+Difficulty: Easy
+Topics: Tree, Depth-First Search, Binary Tree
+
 You are given the root of a full binary tree with the following properties:
 
 - Leaf nodes have either the value 0 or 1, where 0 represents False and 1 represents True.
