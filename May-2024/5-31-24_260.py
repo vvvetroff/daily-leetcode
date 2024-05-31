@@ -1,6 +1,9 @@
 '''
 260. Single Number III
 
+Difficulty: Medium
+Topics: Array, Bit Manipulation
+
 Given an integer array nums, 
 in which exactly two elements appear only once 
 and all the other elements appear exactly twice. 
