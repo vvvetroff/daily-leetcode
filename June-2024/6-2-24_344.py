@@ -25,10 +25,7 @@ class Solution:
         l, r = 0, len(s)-1
         m = l + r // 2
         while l <= m and r >= m:
-            x = s[l]
-            y = s[r]
-            s[l] = y
-            s[r] = x
+            s[l], s[r] = s[r], s[l]
             l += 1
             r -= 1
 
