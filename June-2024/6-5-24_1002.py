@@ -16,7 +16,7 @@ I watched his video after going on
 a 3 hour bike ride. I didn't feel
 like doing anything after that tbh.
 
-O(n^2)
+O(n*m) where n = # of words, m = length of longest word
 '''
 
 class Solution:
