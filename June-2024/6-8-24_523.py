@@ -1,6 +1,9 @@
 '''
 523. Continuous Subarray Sum
 
+Difficulty: Medium
+Topics: Array, Hash Table, Math, Prefix Sum
+
 Given an integer array nums and an integer k, 
 return true if nums has a good subarray or false otherwise.
 
@@ -40,9 +43,12 @@ class Solution:
         for i in range(len(nums)):
             mod = (mod + nums[i]) % k
             if mod in lookup:
-                if i - lookup[mod] > 1: 
+                if i - lookup[mod] > 1:
                     return True
             else:
                 lookup[mod] = i
 
         return False
+
+
+
