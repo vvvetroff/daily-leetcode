@@ -25,31 +25,28 @@ where heights[i] != expected[i].
 
 Counting Sort for the win!
 CSE 3500 taught me well.
-O(n) time, O(n+k) space
+O(n+k) time, O(1) space
+(C array is always the same length)
 instead of O(nlogn) time
 '''
 
 
 class Solution:
     def heightChecker(self, heights: List[int]) -> int:
-        k = max(heights)
         n = len(heights)
-        C = [0] * (k+1)
-        expected = [0] * n
+        C = [0] * (101)
         indices = 0
 
         for i in range(n):
             C[heights[i]] += 1
 
-        for i in range(2, k+1):
-            C[i] = C[i] + C[i-1]
-
-        for i in reversed(range(n)):
-            expected[C[heights[i]]-1] = heights[i]
-            C[heights[i]] -= 1
+        for i in range(2, len(C)):
+            C[i] += C[i-1]
 
         for i in range(n):
-            if expected[i] != heights[i]:
+            expected = heights[C[heights[i]]-1]
+            C[heights[i]] -= 1
+            if expected != heights[i]:
                 indices += 1
 
         return indices
