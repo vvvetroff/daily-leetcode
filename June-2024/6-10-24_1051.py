@@ -25,6 +25,8 @@ where heights[i] != expected[i].
 
 Counting Sort for the win!
 CSE 3500 taught me well.
+O(n) time, O(n+k) space
+instead of O(nlogn) time
 '''
 
 
