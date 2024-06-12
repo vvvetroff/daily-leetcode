@@ -17,6 +17,8 @@ The only problem stopping em from completing it was figuring how
 to actually initialize a new linked list.
 Had to look to Neetcode for that
 O(n) time
+I'll soon do some more problems
+I am just figuring out vim stuff
 '''
 
 # Definition for singly-linked list.
@@ -24,6 +26,8 @@ O(n) time
 #     def __init__(self, val=0, next=None):
 #         self.val = val
 #         self.next = next
+
+
 class Solution:
     def addTwoNumbers(self, l1: Optional[ListNode], l2: Optional[ListNode]) -> Optional[ListNode]:
         carry = 0
@@ -43,6 +47,3 @@ class Solution:
             l2 = l2.next if l2 else None
             current = current.next
         return output.next
-
-
-
