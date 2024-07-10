@@ -23,6 +23,7 @@ If there are fewer than two critical points, return [-1, -1].
 Answer from Neetcode
 '''
 
+from typing import List
 # Definition for singly-linked list.
 # class ListNode:
 #     def __init__(self, val=0, next=None):
