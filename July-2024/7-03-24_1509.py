@@ -19,7 +19,6 @@ O(nlog)
 import math
 from typing import List
 
-
 class Solution:
     def minDifference(self, nums: List[int]) -> int:
         if len(nums) <= 4:
