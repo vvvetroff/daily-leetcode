@@ -25,8 +25,6 @@ O(n) initially,
 O(1) figured out during my hospital visit.
 '''
 
-# test block
-
 class Solution:
     def passThePillow(self, n: int, time: int) -> int:
         # O(n) Submission
