@@ -40,7 +40,7 @@ class Solution:
         zero += 1
     return nums
 
-  def test(self, nums: List[int], expected: List[int]) -> None:
+  def test(self, nums, expected):
     print(f"Test Case: {nums}")
     self.applyOperations(nums)
     print(f'{nums} | {"PASSED" if nums == expected else "FAILED"}\n')
