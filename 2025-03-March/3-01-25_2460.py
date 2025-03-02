@@ -43,7 +43,7 @@ class Solution:
   def test(self, nums, expected):
     print(f"Test Case: {nums}")
     self.applyOperations(nums)
-    print(f'{nums} | {"PASSED" if nums == expected else "FAILED"}\n')
+    print(f'\t{"PASSED" if nums == expected else "FAILED : "+str(nums)}')
 
 if __name__ == "__main__":
   nums = [1,2,2,1,1,0]
