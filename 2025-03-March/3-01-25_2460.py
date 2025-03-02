@@ -40,15 +40,16 @@ class Solution:
         zero += 1
     return nums
 
+  def test(self, nums: List[int], expected: List[int]) -> None:
+    print(f"Test Case: {nums}")
+    self.applyOperations(nums)
+    print(f'{nums} | {"PASSED" if nums == expected else "FAILED"}\n')
+
 if __name__ == "__main__":
   nums = [1,2,2,1,1,0]
   expected = [1,4,2,0,0,0]
-  print(f"Test Case: {nums}")
-  result = Solution().applyOperations(nums)
-  print(f'{result} | {"PASSED" if result == expected else "FAILED"}\n')
+  Solution().test(nums, expected)
 
   nums = [0,1]
   expected = [1,0]
-  print(f"Test Case: {nums}")
-  result = Solution().applyOperations(nums)
-  print(f'{result} | {"PASSED" if result == expected else "FAILED"}\n')
+  Solution().test(nums, expected)
